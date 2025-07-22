@@ -1,0 +1,61 @@
+.mainBox{
+    margin: 120px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 800px;
+}
+.heading{
+      display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.colorBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+     display: flex;
+    
+    justify-content: center;
+    align-content: center;
+
+}
+.boxes{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+.purple{
+    background-color: purple;
+
+}
+.red{
+    background-color: red;
+
+}
+.yellow{
+    background-color: yellow;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.flashColor{
+    background-color: black;
+}
+
+.boxes:active{
+    border: 5px solid black;
+}
