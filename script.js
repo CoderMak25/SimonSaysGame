@@ -10,7 +10,7 @@ let randColorBox;
 let randIdx;
 let randColorName;
 
-document.addEventListener("keypress", function () {
+document.addEventListener("click", function () {
     if (inikey == false) {
 
         h3.innerText = `Level ${level}`;
@@ -80,18 +80,22 @@ async function gameOver() {
 
 }
 
-function check() {
+async function check() {
 
      for (let i = 0; i < playerSeq.length; i++) {
         if (playerSeq[i] !== gameSeq[i]) {
-            h3.innerText = "Game Over! Press any key to restart.";
+            h3.innerText = "Game Over! Click here to restart.";
             gameOver();
+            await wait(1500);
+            
             resetGame();
             return;
         }
     }
 
     if (playerSeq.length === gameSeq.length) {
+        await wait(500);
+
         playerSeq = [];
         levelUpgrader();
         generateRandColor();
